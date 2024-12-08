@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar img {
+  width: 100px; 
+}
+
+.nav-link:hover {
+  color: #C16B6B;
+}
+
+.nav-item:hover {
+  color: #C16B6B;
+}
+
+.btn-primary {
+  background-color: #C16B6B;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #545454;
+}
+
+/* main */
+
+.contenido {
+  min-height: 100vh;
+}
+
+.active-propio {
+  color: #C16B6B;
+}
+
+.active-propio:hover {
+  color: #C16B6B;
+}
+
+/* carousel */
+
+.cambio-color {
+  color: #C16B6B;
+}
+
+.color-gris {
+  color: #545454;
+}
+
+/* cards */
+
+.tamanio-tarjeta {
+  width: 18rem;
+}
+
+.tamanio-tarjeta img {
+  height: 370px;
+  width: 280px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  text-align: center;
+}
+
+.text-hidden {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  transition: max-height 0.3s ease;
+  max-height: 12em;
+}
+
+.text-expanded {
+  -webkit-line-clamp: unset;
+  max-height: none;
+}
+
+/* botones ver más */
+.btn-personalizado {
+  background-color: #C16B6B;
+  color: white;
+}
+
+.btn-personalizado:hover {
+  background-color: #6E6967;
+  color: white;
+}
+
+/* Tamaño del gif */
+.tamanio-gif img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* footer */
+.section-footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* @media query */
+/* Teléfonos (max-width: 767px) */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar img {
+    width: 100px; 
+  }
+
+  .carousel img {
+    height: 200px; 
+    width: 100%;
+    object-fit: cover; 
+  }
+
+   .pie-pagina {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Tabletas (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  header {
+    flex-direction: column;
+    text-align: center;    
+  }
+
+  .navbar img {
+    width: 150px; 
+  }
+
+  .tamanio {     
+    height: 500px;
+    width: 100%;          
+    object-fit: cover;   
+  }
+
+  .pie-pagina {
+    display: flex;    
+    align-items: center;    
+    flex-direction: column;
+    text-align: center;
+    
+    li {
+      margin-left: 100px;
+    }
+  }
+}
+
+/* Escritorios pequeños (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar img {
+    width: 170px; 
+  }
+
+  .tamanio {     
+    height: 600px;
+    width: 100%;          
+    object-fit: cover;   
+  }
+}
+
+/* Escritorios grandes (1200px y más) */
+@media (min-width: 1200px) {
+  .navbar img {
+    width: 170px; 
+  }
+
+  .tamanio {     
+    height: 600px;
+    width: 100%;          
+    object-fit: cover;   
+  }
+}
